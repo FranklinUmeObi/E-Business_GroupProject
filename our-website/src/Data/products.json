@@ -1,0 +1,29 @@
+{
+    "Products": [{
+            "id": 0,
+            "name": "Green Tree 1",
+            "image": "0.png",
+            "price": "12.99",
+            "quantity": 13,
+            "catagory": "nature"
+        },
+        {
+            "id": 1,
+            "name": "White House 1",
+            "image": "1.png",
+            "price": "11.99",
+            "quantity": 2,
+            "catagory": "Urban"
+        },
+        {
+            "id": 2,
+            "name": "Pink Fish",
+            "image": "2.png",
+            "price": "2.50",
+            "quantity": 0,
+            "catagory": "Nature"
+        }
+
+    ]
+
+}

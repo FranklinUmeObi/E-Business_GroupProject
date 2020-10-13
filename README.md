@@ -12,7 +12,7 @@ npm start
 
 ## Guidelines
 
-When writing code, push it to your own branch eg "FranksBranch
+When writing code, push it to your own branch eg "FranksBranch"
 
 When you have a full featuremake a pull request to the main branch.
 Frank will review the code and them aprove the request.

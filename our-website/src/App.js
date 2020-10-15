@@ -1,13 +1,29 @@
 import React from 'react';
-import Header from './Components/header'
+import { BrowserRouter as Router, Route} from "react-router-dom";
+
+import Header from      './Components/Header/header'
+import LandingPage from './Components/LandingPage/LandingPage'
+import ProductPage from './Components/ProductPage/ProductPage'
+
+import data from './Data/products.json'
+
 import './App.css';
+
 
 function App() {
   return (
-    <div className="App">
-      <Header/>
-     <h2>This should display if working correctly</h2>
-    </div>
+    <Router>
+      <div className="App">
+        <Header/>
+
+        <Route exact={true} path="/" component={LandingPage}/>
+
+        <Route exact={true} path="/product" render={() => (
+          <ProductPage name={data.Products[1].name}/>//This is just an example of how to pass data as a parameter
+        )}/>
+
+      </div>
+    </Router>
   );
 }
 

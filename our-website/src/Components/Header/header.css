@@ -1,7 +1,235 @@
 .header {
-    background: #aaa;
-    width: 100%;
-    height: 50px;
+    background: #e6e7ee;
+    width: 100vw;
+    height: 90px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    -webkit-box-shadow: 0px 10px 12px -10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 10px 12px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 10px 12px -10px rgba(0, 0, 0, 0.75);
+    position: fixed;
+    z-index: 50;
+    top: 0;
+}
+
+.leftContainer {
+    width: 350px;
+    margin-left: 50px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+}
+
+.menuButton {
+    color: #31344b;
+    width: 50px;
+    background-color: #e6e7ee;
+    border-color: #e6e7ee;
+    box-shadow: 2px 2px 5px #b8b9be, -3px -3px 7px #FFFFFF;
+    display: flex;
+    flex-direction: row;
+}
+
+.menuButton:hover {
+    color: #000;
+    background-color: #e6e7ee;
+    border-color: #e6e7ee;
+    box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #FFFFFF;
+}
+
+.menuButton:focus,
+.menuButton.focus {
+    outline: 0;
+    box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #FFFFFF;
+}
+
+.logoContainer {
+    margin: 5px auto;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    width: 200px;
+    height: 70px;
+}
+
+@media only screen and (max-width: 800px) {
+    .logo {
+        width: 150px;
+    }
+}
+
+.rightContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 350px;
+    margin-right: 50px
+}
+
+@media only screen and (max-width: 600px) {
+    .logoContainer {
+        display: none;
+    }
+    .cartButton {
+        width: 50px;
+    }
+    .rightContainer {
+        width: 120px;
+        margin-right: 15px
+    }
+    .leftContainer {
+        margin-left: 15px
+    }
+}
+
+.cartButton {
+    width: 120px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.cartPrice {
+    color: red;
+}
+
+.cartIcon {
+    color: #000;
+    margin-left: 10px;
+}
+
+
+/*
+
+
+This is the Neumorphism styles 
+
+
+*/
+
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    font-weight: 400;
+    color: #000;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 0.0625rem solid transparent;
+    padding: 0.55rem 0.95rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.55rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .btn {
+        transition: none;
+    }
+}
+
+.btn:hover {
+    color: #44476A;
+    text-decoration: none;
+}
+
+.btn:focus,
+.btn.focus {
+    outline: 0;
+    box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #FFFFFF;
+}
+
+.btn.disabled,
+.btn:disabled {
+    opacity: 0.65;
+    box-shadow: none;
+}
+
+.btn:not(:disabled):not(.disabled):active,
+.btn:not(:disabled):not(.disabled).active {
+    box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #FFFFFF;
+}
+
+.btn:not(:disabled):not(.disabled):active:focus,
+.btn:not(:disabled):not(.disabled).active:focus {
+    box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #FFFFFF, inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #FFFFFF;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 30px;
+    padding: 0.4rem 0.55rem;
+    margin: 10px;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #44476A;
+    background-color: #e6e7ee;
+    background-clip: padding-box;
+    border: 0.0625rem solid #D1D9E6;
+    border-radius: 0.55rem;
+    box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #FFFFFF;
+    transition: all 0.3s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .form-control {
+        transition: none;
+    }
+}
+
+.form-control::-ms-expand {
+    background-color: transparent;
+    border: 0;
+}
+
+.form-control:focus {
+    color: #44476A;
+    background-color: #e6e7ee;
+    border-color: #D1D9E6;
+    outline: 0;
+    box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #FFFFFF, none;
+}
+
+.form-control:-ms-input-placeholder {
+    color: #44476A;
+    opacity: 1;
+}
+
+.form-control::-ms-input-placeholder {
+    color: #44476A;
+    opacity: 1;
+}
+
+.form-control::placeholder {
+    color: #44476A;
+    opacity: 1;
+}
+
+.form-control:disabled,
+.form-control[readonly] {
+    background-color: #e6e7ee;
+    opacity: 1;
+}
+
+select.form-control:focus::-ms-value {
+    color: #44476A;
+    background-color: #e6e7ee;
+}
+
+.form-control-file,
+.form-control-range {
+    display: block;
+    width: 100%;
 }

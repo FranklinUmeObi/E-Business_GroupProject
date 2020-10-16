@@ -22,6 +22,13 @@
 .c_button {
     width: 200px;
     height: 60px;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
     border-radius: 20px;
+}
+
+.c_button:hover {
+    color: #000;
+    background-color: #e6e7ee;
+    border-color: #e6e7ee;
+    box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #FFFFFF;
 }

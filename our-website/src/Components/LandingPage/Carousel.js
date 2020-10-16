@@ -13,7 +13,7 @@ function Carousel() {
          <ReactCarousel className="slider" showThumbs={false} showStatus={false} showArrows={true} autoPlay infiniteLoop>
                 <div>
                     <img className="c_image" src={img1} alt="Slide1"/>
-                    <Link to="/">
+                    <Link to="/product">
                         <button className="c_button">
                             <h4 >Customise Your Perfect Christmas Sock</h4>
                         </button>
@@ -22,7 +22,7 @@ function Carousel() {
 
                 <div>
                     <img className="c_image" src={img2} alt="Slide2" />
-                    <Link to="/">
+                    <Link to="/product">
                         <button className="c_button">
                             <h4> Customise Your Perfect Christmas Sock</h4>
                         </button>
@@ -30,7 +30,7 @@ function Carousel() {
                 </div>
                 <div>
                     <img className="c_image" src={img3} alt="Slide3" />
-                    <Link to="/">
+                    <Link to="/product">
                         <button className="c_button">
                             <h4 >Customise Your Perfect Christmas Sock</h4>
                         </button>

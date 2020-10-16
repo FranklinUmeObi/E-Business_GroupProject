@@ -51,7 +51,7 @@ function Header() {
       </div>
     </div>
 
-    <Menu show={state.show}/>
+    <Menu show={state.show} setState={setState}/>
 
    </div>
   );

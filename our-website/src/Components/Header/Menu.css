@@ -1,5 +1,6 @@
     .padding {
-        height: 90px;
+        height: 100px;
+        background: #e6e7ee;
     }
     
     .menuContainer {
@@ -11,12 +12,11 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        align-items: center;
     }
     
     .menuItem {
         color: #31344b;
-        margin: 10px 5px 10px 5px;
+        margin: 8px 40px;
         width: 140px;
         background-color: #e6e7ee;
         border-color: #e6e7ee;
@@ -30,6 +30,13 @@
         background-color: #e6e7ee;
         border-color: #e6e7ee;
         box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #FFFFFF;
+    }
+    
+    .closeContainer {
+        width: auto;
+        margin: 10px;
+        display: flex;
+        flex-direction: row-reverse;
     }
     /*
 

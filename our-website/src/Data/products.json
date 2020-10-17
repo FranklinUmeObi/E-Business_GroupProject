@@ -1,68 +1,189 @@
 {
     "Products": [{
             "id": 0,
-            "name": "Santa red",
-            "image": "santaRed.png",
+            "name": "Santa Red",
+            "image": "SantaRed.png",
             "price": "8.99",
             "quantity": 13,
             "catagory": "Traditional"
         },
         {
             "id": 1,
-            "name": "Santa blue",
-            "image": "santaBlue.png",
+            "name": "Light Up Tree",
+            "image": "1.png",
+            "price": "12.99",
+            "quantity": 7,
+            "catagory": "Fancy"
+        },
+        {
+            "id": 2,
+            "name": "Santa Blue",
+            "image": "SantaBlue.png",
             "price": "8.99",
             "quantity": 2,
             "catagory": "Traditional"
         },
         {
-            "id": 2,
-            "name": "Snowman red",
+            "id": 3,
+            "name": "Santa's Sack",
             "image": "2.png",
+            "price": "12.99",
+            "quantity": 8,
+            "catagory": "Fancy"
+        },
+        {
+            "id": 4,
+            "name": "Snowman Red",
+            "image": "SnowmanRed.png",
             "price": "8.99",
             "quantity": 12,
             "catagory": "Traditional"
         },
         {
-            "id": 3,
-            "name": "Snowman blue",
+            "id": 5,
+            "name": "Pine Cones",
             "image": "3.png",
+            "price": "11.99",
+            "quantity": 4,
+            "catagory": "Fancy"
+        },
+        {
+            "id": 6,
+            "name": "Snowman Blue",
+            "image": "SnowmanBlue.png",
             "price": "8.99",
             "quantity": 0,
             "catagory": "Traditional"
         },
         {
-            "id": 4,
-            "name": "Snowflake red",
+            "id": 7,
+            "name": "Presents",
             "image": "4.png",
-            "price": "7.99",
+            "price": "12.99",
+            "quantity": 4,
+            "catagory": "Fancy"
+        },
+        {
+            "id": 8,
+            "name": "Snowflake Red",
+            "image": "SnowflakeRed.png",
+            "price": "6.99",
             "quantity": 9,
             "catagory": "Traditional"
         },
         {
-            "id": 5,
-            "name": "Snowflake blue",
+            "id": 9,
+            "name": "Red House",
             "image": "5.png",
-            "price": "7.99",
+            "price": "10.99",
+            "quantity": 22,
+            "catagory": "Fancy"
+        },
+        {
+            "id": 10,
+            "name": "Snowflake Blue",
+            "image": "SnowFlakeBlue.png",
+            "price": "8.99",
             "quantity": 5,
             "catagory": "Traditional"
         },
         {
-            "id": 6,
-            "name": "Elf red",
+            "id": 11,
+            "name": "Snowie",
             "image": "6.png",
+            "price": "11.99",
+            "quantity": 1,
+            "catagory": "Fancy"
+        },
+        {
+            "id": 12,
+            "name": "Elf Red",
+            "image": "ElfRed.png",
             "price": "7.99",
-            "quantity": 102,
+            "quantity": 12,
             "catagory": "Traditional"
         },
         {
-            "id": 7,
-            "name": "Elf green",
+            "id": 13,
+            "name": "Nigel",
             "image": "7.png",
-            "price": "7.99",
+            "price": "13.99",
             "quantity": 3,
+            "catagory": "Fancy"
+        },
+        {
+            "id": 14,
+            "name": "Elf Blue",
+            "image": "ElfBlue.png",
+            "price": "7.99",
+            "quantity": 1,
+            "catagory": "Traditional"
+        },
+        {
+            "id": 15,
+            "name": "Gift",
+            "image": "8.png",
+            "price": "14.99",
+            "quantity": 7,
+            "catagory": "Fancy"
+        },
+        {
+            "id": 16,
+            "name": "Cane Red",
+            "image": "CaneRed.png",
+            "price": "6.99",
+            "quantity": 13,
+            "catagory": "Traditional"
+        },
+        {
+            "id": 17,
+            "name": "Bell",
+            "image": "9.png",
+            "price": "12.99",
+            "quantity": 17,
+            "catagory": "Fancy"
+        },
+        {
+            "id": 18,
+            "name": "Cane Blue",
+            "image": "CaneBlue.png",
+            "price": "6.99",
+            "quantity": 14,
+            "catagory": "Traditional"
+        },
+        {
+            "id": 19,
+            "name": "Neon Snowflakes",
+            "image": "10.png",
+            "price": "32.99",
+            "quantity": 1,
+            "catagory": "Fancy"
+        },
+        {
+            "id": 20,
+            "name": "Tree Red",
+            "image": "TreeRed.png",
+            "price": "8.99",
+            "quantity": 5,
+            "catagory": "Traditional"
+        },
+        {
+            "id": 21,
+            "name": "Snacks",
+            "image": "11.png",
+            "price": "15.99",
+            "quantity": 0,
+            "catagory": "Fancy"
+        },
+        {
+            "id": 22,
+            "name": "Tree Blue",
+            "image": "TreeBlue.png",
+            "price": "8.99",
+            "quantity": 21,
             "catagory": "Traditional"
         }
+
 
     ]
 

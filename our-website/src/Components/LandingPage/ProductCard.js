@@ -10,7 +10,8 @@ function ProductCard(props) {
     <div className="card">
 
       <div className="cardImage">
-        <img className="img" src={ require('../../Assets/ProductImages/test.png') } alt="Product" />
+        <img className="img" src={ require(`../../Assets/ProductImages/${props.image}`) } alt="Product" />
+        
       </div>
 
       <div className="cardText">
@@ -22,7 +23,8 @@ function ProductCard(props) {
 
       <div className="cardButtons">
           <div className="price">
-             <h3>{props.price}</h3>
+             <h3>€{props.price}</h3>
+             
           </div>
 
         <button className="cardAddCart ">

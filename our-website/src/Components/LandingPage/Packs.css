@@ -1,0 +1,64 @@
+.packsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    color: #000;
+}
+
+.pack {
+    position: relative;
+    width: 450px;
+    height: 420px;
+    margin: 20px 0;
+    border-radius: 50% / 10%;
+    color: black;
+    text-align: center;
+    text-indent: .1em;
+}
+
+@media only screen and (max-width: 600px) {
+    .pack {
+        width: 250px;
+        height: 220px;
+    }
+}
+
+.pack:before {
+    content: '';
+    position: absolute;
+    top: 15%;
+    bottom: 10%;
+    right: 0;
+    left: 0;
+    background: inherit;
+    border-radius: 5% / 50%;
+    background-color: #e6e7ee;
+    border-color: #e6e7ee;
+    box-shadow: 2px 2px 5px #b8b9be, -3px -3px 7px #FFFFFF;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 5;
+}
+
+.fam:before {
+    background-image: url("../../Assets/Packs/fam.png");
+}
+
+.corp:before {
+    background-image: url("../../Assets/Packs/corp.png");
+}
+
+.pack:hover {
+    color: #000;
+    background-color: #e6e7ee;
+    border-color: #e6e7ee;
+    box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #FFFFFF;
+}
+
+.packText {
+    margin-bottom: 10px;
+    z-index: 10;
+    height: 40px;
+}

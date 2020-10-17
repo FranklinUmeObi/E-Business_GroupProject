@@ -1,27 +1,67 @@
 {
     "Products": [{
             "id": 0,
-            "name": "Green Tree 1",
+            "name": "Santa 1 red",
             "image": "0.png",
-            "price": "12.99",
+            "price": "8.99",
             "quantity": 13,
-            "catagory": "nature"
+            "catagory": "Santa"
         },
         {
             "id": 1,
-            "name": "White House 1",
+            "name": "Santa 1 blue",
             "image": "1.png",
-            "price": "11.99",
+            "price": "8.99",
             "quantity": 2,
-            "catagory": "Urban"
+            "catagory": "Santa"
         },
         {
             "id": 2,
-            "name": "Pink Fish",
+            "name": "Snowman 1 red",
             "image": "2.png",
-            "price": "2.50",
-            "quantity": 0,
-            "catagory": "Nature"
+            "price": "8.99",
+            "quantity": 2,
+            "catagory": "Snowman"
+        },
+        {
+            "id": 3,
+            "name": "Snowman 1 blue",
+            "image": "3.png",
+            "price": "8.99",
+            "quantity": 2,
+            "catagory": "Snowman"
+        },
+        {
+            "id": 4,
+            "name": "Snowflake 1 red",
+            "image": "4.png",
+            "price": "7.99",
+            "quantity": 2,
+            "catagory": "Snowflake"
+        },
+        {
+            "id": 5,
+            "name": "Snowflake 1 blue",
+            "image": "5.png",
+            "price": "7.99",
+            "quantity": 2,
+            "catagory": "Snowflake"
+        },
+        {
+            "id": 6,
+            "name": "Elf 1 red",
+            "image": "6.png",
+            "price": "7.99",
+            "quantity": 2,
+            "catagory": "Elf"
+        },
+        {
+            "id": 7,
+            "name": "Elf 1 green",
+            "image": "7.png",
+            "price": "7.99",
+            "quantity": 2,
+            "catagory": "Elf"
         }
 
     ]

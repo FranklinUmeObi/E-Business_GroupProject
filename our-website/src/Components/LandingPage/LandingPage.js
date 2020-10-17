@@ -1,4 +1,5 @@
 import React from 'react'
+import SimpleReactLightbox from "simple-react-lightbox";
 import Carousel from   './Carousel'
 import Packs from      './Packs'
 import Catalogue from   './Catalogue'
@@ -13,7 +14,10 @@ function LandingPage() {
                  <h1 className="title">Our Packs</h1>
                  <Packs id="packs"/>         
                  <h1 className="title">Our Products</h1>
-                <Catalogue/>
+                 <SimpleReactLightbox>
+                    <Catalogue/>
+                 </SimpleReactLightbox>
+                
              </div>
         </div>
     )

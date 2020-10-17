@@ -1,4 +1,5 @@
 import React from 'react'
+import { SRLWrapper } from "simple-react-lightbox";
 import './Catalogue.css';
 import ProductCard from   './ProductCard'
 import data from '../../Data/products.json'
@@ -19,10 +20,14 @@ function Catalogue() {
 
     return (
         <div className="catalogue">
+            
             <h2>(tabs for filtering here)</h2>
-            <div className="cards">
-            {cards}
-            </div>
+            <SRLWrapper> 
+                <div className="cards">
+                    {cards}
+                </div>
+            </SRLWrapper>
+           
             
         </div>
     )

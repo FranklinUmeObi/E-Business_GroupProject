@@ -1,0 +1,11 @@
+.catalogue{
+    background: #e6e7ee;
+    width: 100%;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+}

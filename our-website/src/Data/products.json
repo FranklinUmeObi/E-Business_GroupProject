@@ -1,67 +1,67 @@
 {
     "Products": [{
             "id": 0,
-            "name": "Santa 1 red",
-            "image": "0.png",
+            "name": "Santa red",
+            "image": "santaRed.png",
             "price": "8.99",
             "quantity": 13,
-            "catagory": "Santa"
+            "catagory": "Traditional"
         },
         {
             "id": 1,
-            "name": "Santa 1 blue",
-            "image": "1.png",
+            "name": "Santa blue",
+            "image": "santaBlue.png",
             "price": "8.99",
             "quantity": 2,
-            "catagory": "Santa"
+            "catagory": "Traditional"
         },
         {
             "id": 2,
-            "name": "Snowman 1 red",
+            "name": "Snowman red",
             "image": "2.png",
             "price": "8.99",
-            "quantity": 2,
-            "catagory": "Snowman"
+            "quantity": 12,
+            "catagory": "Traditional"
         },
         {
             "id": 3,
-            "name": "Snowman 1 blue",
+            "name": "Snowman blue",
             "image": "3.png",
             "price": "8.99",
-            "quantity": 2,
-            "catagory": "Snowman"
+            "quantity": 0,
+            "catagory": "Traditional"
         },
         {
             "id": 4,
-            "name": "Snowflake 1 red",
+            "name": "Snowflake red",
             "image": "4.png",
             "price": "7.99",
-            "quantity": 2,
-            "catagory": "Snowflake"
+            "quantity": 9,
+            "catagory": "Traditional"
         },
         {
             "id": 5,
-            "name": "Snowflake 1 blue",
+            "name": "Snowflake blue",
             "image": "5.png",
             "price": "7.99",
-            "quantity": 2,
-            "catagory": "Snowflake"
+            "quantity": 5,
+            "catagory": "Traditional"
         },
         {
             "id": 6,
-            "name": "Elf 1 red",
+            "name": "Elf red",
             "image": "6.png",
             "price": "7.99",
-            "quantity": 2,
-            "catagory": "Elf"
+            "quantity": 102,
+            "catagory": "Traditional"
         },
         {
             "id": 7,
-            "name": "Elf 1 green",
+            "name": "Elf green",
             "image": "7.png",
             "price": "7.99",
-            "quantity": 2,
-            "catagory": "Elf"
+            "quantity": 3,
+            "catagory": "Traditional"
         }
 
     ]

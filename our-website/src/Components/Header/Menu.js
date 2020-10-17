@@ -27,13 +27,13 @@ function Menu(props) {
             </button>
           </Link>
 
-          <Link to="/checkout">
+          <Link to="/#packs">
             <button className="btn menuItem">
               <h3 className="menuItemText">Family Pack</h3>
             </button>
           </Link>
 
-          <Link to="/checkout">
+          <Link to="/#packs">
             <button className="btn menuItem">
               <h3 className="menuItemText">Corporate Pack</h3>
             </button>

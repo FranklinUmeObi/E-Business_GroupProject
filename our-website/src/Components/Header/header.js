@@ -8,7 +8,7 @@ import Menu from      './Menu'
 import "./header.css";
 import logo from "../../Assets/Logo/logo.png";
 
-function Header() {
+function Header(props) {
 
   const [state, setState] = useState({
       show: 0
@@ -25,6 +25,8 @@ function Header() {
     setState({show:y})
   }
 
+  
+
   return (
     <div>
     <div className="header">
@@ -32,7 +34,11 @@ function Header() {
         <button className="btn menuButton" onClick={handleMenuPress}>
           <FontAwesomeIcon icon={faBars} />
         </button>
-        <input type="text" className="form-control" placeholder="Search..." />
+        <input type="text" 
+        value={props.searchVal}
+        onChange={props.setSearchState} 
+        className="form-control" 
+        placeholder="Search or use tab filter below" />
       </div>
 
       <div className="logoContainer">

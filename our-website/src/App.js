@@ -1,5 +1,5 @@
-import React from 'react';
-import { BrowserRouter as Router, Route} from "react-router-dom";
+import React, {useState} from 'react';
+import { HashRouter as Router, Route} from "react-router-dom";
 
 import Header from      './Components/Header/header'
 import LandingPage from './Components/LandingPage/LandingPage'
@@ -12,12 +12,22 @@ import './App.css';
 
 
 function App() {
+
+  const [search, setSearch] = useState({
+    searchTerm: ""
+});
+
+function editSearchTerm(e)
+  {
+    setSearch({searchTerm : e.target.value})
+  }
+
   return (
     <Router>
       <div className="App">
-        <Header/>
+        <Header setSearchState={editSearchTerm} searchVal={search.searchTerm}/>
 
-        <Route exact={true} path="/" component={LandingPage}/>
+        <Route exact={true} path="/" render={() => (<LandingPage query={search.searchTerm}/>)}/>
         <Route exact={true} path="/checkout" component={CheckoutPage}/>
         <Route exact={true} path="/product" render={() => (
           <ProductPage name={data.Products[1].name}/>//This is just an example of how to pass data as a parameter

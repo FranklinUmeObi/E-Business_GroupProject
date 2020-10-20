@@ -5,17 +5,17 @@ import Packs from      './Packs'
 import Catalogue from   './Catalogue'
 import './LandingPage.css';
 
-function LandingPage() {
+function LandingPage(props) {
     return (
-        <div className="LandingPage">
-             <div className="pageContainer">
-                 <h1 className="title">Customise your stocking today</h1>
+        <div className="LandingPage" id="home">
+             <div className="pageContainer" >
+                 <h1 className="title" >Customise your stocking today</h1>
                  <Carousel />
-                 <h1 className="title">Our Packs</h1>
-                 <Packs id="packs"/>         
-                 <h1 className="title">Our Products</h1>
+                 <h1 className="title" id="packs">Our Packs</h1>
+                 <Packs />         
+                 <h1 className="title" id="products">Our Products</h1>
                  <SimpleReactLightbox>
-                    <Catalogue/>
+                    <Catalogue query ={props.query}/>
                  </SimpleReactLightbox>
                 
              </div>

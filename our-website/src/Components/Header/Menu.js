@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from 'react-router-hash-link';
 import "./Menu.css";
 
 function Menu(props) {
@@ -21,7 +21,7 @@ function Menu(props) {
             </button>
           </div>
 
-          <Link to="/">
+          <Link to="/#home">
             <button className="btn menuItem">
               <h3 className="menuItemText">Home</h3>
             </button>
@@ -29,15 +29,15 @@ function Menu(props) {
 
           <Link to="/#packs">
             <button className="btn menuItem">
-              <h3 className="menuItemText">Family Pack</h3>
+              <h3 className="menuItemText">Packs</h3>
+            </button>
+          </Link>
+          <Link to="/#products">
+            <button className="btn menuItem">
+              <h3 className="menuItemText">Products</h3>
             </button>
           </Link>
 
-          <Link to="/#packs">
-            <button className="btn menuItem">
-              <h3 className="menuItemText">Corporate Pack</h3>
-            </button>
-          </Link>
 
           <Link to="/checkout">
             <button className="btn menuItem">

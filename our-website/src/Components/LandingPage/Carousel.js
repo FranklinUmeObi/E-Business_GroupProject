@@ -22,7 +22,7 @@ function Carousel() {
 
                 <div>
                     <img className="c_image" src={img2} alt="Slide2" />
-                    <Link to="/product">
+                    <Link to="/customise">
                         <button className="c_button">
                             <h4> Customise Your Perfect Christmas Sock</h4>
                         </button>
@@ -30,7 +30,7 @@ function Carousel() {
                 </div>
                 <div>
                     <img className="c_image" src={img3} alt="Slide3" />
-                    <Link to="/product">
+                    <Link to="/customise">
                         <button className="c_button">
                             <h4 >Customise Your Perfect Christmas Sock</h4>
                         </button>

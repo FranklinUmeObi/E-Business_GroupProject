@@ -1,3 +1,4 @@
+
 .CustomSockPage {
     background: #e6e7ee;
     display: flex;
@@ -14,4 +15,88 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
+
+/*
+Online Code
+*/
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.containerImage{
+    width: 100%;
+    position: relative;
+    height: 45vw;
+    background-color: #e6e7ee;
+    border-color: #e6e7ee;
+    box-shadow: 2px 2px 5px #b8b9be, -3px -3px 7px #FFFFFF;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+
+#product-svg {
+    position: absolute;
+    z-index: 2;
+    mix-blend-mode: multiply;
+    
+  }
+
+#background-image {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  #product-shape {
+    fill: #f4f;
+  }
+
+
+  
+.jscolor {
+    position: fixed;
+    bottom: 4em;
+    right: 4em;
+    z-index: 3;
+    padding: 1em;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+
+  .colorContainer{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    align-content: flex-end;
+  }
+
+  .selector{
+    width: 200px;
+    margin: 30px;
+    margin-left:auto; margin-right:70px;
+  }
+
+  @media only screen and (max-width: 750px) 
+  {
+    .pageContainer {
+      width: 90vw;
+    }
+  }

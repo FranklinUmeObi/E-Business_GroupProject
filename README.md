@@ -2,6 +2,8 @@
 Our E-Business Group Project
 
 ## Guide
+Make sure you have Node.js Installed and set up
+
 
 ### To get the program running, type these into your command line 1 by 1
 ```

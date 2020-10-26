@@ -39,19 +39,19 @@ function Menu(props) {
           </Link>
 
 
-          <Link to="/checkout">
+          <Link to="/about-us">
             <button className="btn menuItem">
               <h3 className="menuItemText">About Us</h3>
             </button>
           </Link>
 
-          <Link to="/checkout">
+          <Link to="/customer-care">
             <button className="btn menuItem">
               <h3 className="menuItemText">Customer Care</h3>
             </button>
           </Link>
 
-          <Link to="/checkout">
+          <Link to="/contact-us">
             <button className="btn menuItem">
               <h3 className="menuItemText">Contact</h3>
             </button>

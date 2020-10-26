@@ -3,10 +3,11 @@ import { HashRouter as Router, Route} from "react-router-dom";
 
 import Header from      './Components/Header/header'
 import LandingPage from './Components/LandingPage/LandingPage'
-import ProductPage from './Components/ProductPage/ProductPage'
 import CheckoutPage from './Components/CheckoutPage/CheckoutPage'
-
-import data from './Data/products.json'
+import CustomSockPage from './Components/CustomSockPage/CustomSockPage'
+import AboutUsPage from './Components/TextPages/AboutUsPage'
+import ContactPage from './Components/TextPages/ContactPage'
+import CustomerCarePage from './Components/TextPages/CustomerCarePage'
 
 import './App.css';
 
@@ -17,6 +18,11 @@ function App() {
     searchTerm: ""
 });
 
+const [cart, setCart] = useState({
+  price : 0.00,
+  items: []
+});
+
 function editSearchTerm(e)
   {
     setSearch({searchTerm : e.target.value})
@@ -25,13 +31,16 @@ function editSearchTerm(e)
   return (
     <Router>
       <div className="App">
-        <Header setSearchState={editSearchTerm} searchVal={search.searchTerm}/>
+        <Header setSearchState={editSearchTerm} searchVal={search.searchTerm} price={cart.price} />
 
-        <Route exact={true} path="/" render={() => (<LandingPage query={search.searchTerm}/>)}/>
-        <Route exact={true} path="/checkout" component={CheckoutPage}/>
-        <Route exact={true} path="/product" render={() => (
-          <ProductPage name={data.Products[1].name}/>//This is just an example of how to pass data as a parameter
-        )}/>
+        <Route exact={true} path="/" render={() => (<LandingPage query={search.searchTerm}/>)} setCart={setCart}/>
+
+        <Route exact={true} path="/checkout" render={() => (<CheckoutPage cart={cart.items}/>)}/>
+        <Route exact={true} path="/customise" component={CustomSockPage}/>
+
+        <Route exact={true} path="/about-us" component={AboutUsPage}/>
+        <Route exact={true} path="/contact-us" component={ContactPage}/>
+        <Route exact={true} path="/customer-care" component={CustomerCarePage}/>
 
       </div>
     </Router>

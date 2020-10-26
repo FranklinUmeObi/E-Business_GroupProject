@@ -13,7 +13,7 @@ function Carousel() {
          <ReactCarousel className="slider" showThumbs={false} showStatus={false} showArrows={true} autoPlay infiniteLoop>
                 <div>
                     <img className="c_image" src={img1} alt="Slide1"/>
-                    <Link to="/product">
+                    <Link to="/customise">
                         <button className="c_button">
                             <h4 >Customise Your Perfect Christmas Sock</h4>
                         </button>

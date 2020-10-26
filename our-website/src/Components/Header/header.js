@@ -49,7 +49,7 @@ function Header(props) {
         <Link to="/checkout">
           <button className="btn menuButton cartButton">
             <h3 className="cartPrice">
-            € {props.price.toFixed(2)}
+              € {props.price}
               <FontAwesomeIcon className="cartIcon" icon={faShoppingCart} />
             </h3>
           </button>

@@ -15,7 +15,7 @@ function LandingPage(props) {
                  <Packs />         
                  <h1 className="title" id="products">Our Products</h1>
                  <SimpleReactLightbox>
-                    <Catalogue query ={props.query}/>
+                    <Catalogue query={props.query} setCart={props.setCart} cart={props.cart} />
                  </SimpleReactLightbox>
                 
              </div>

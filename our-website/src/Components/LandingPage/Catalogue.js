@@ -5,6 +5,8 @@ import ProductCard from "./ProductCard";
 import data from "../../Data/products.json";
 
 function Catalogue(props) {
+
+  
   const cards = data.Products.map((product) => (
     <ProductCard
       key={product.id}
@@ -13,11 +15,13 @@ function Catalogue(props) {
       price={product.price}
       quantity={product.quantity}
       catagory={product.catagory}
+      setCart={props.setCart}
+      cart={props.cart}
     />
   ));
 
   const [state, setState] = useState({
-    cardsToShow: cards,
+    cardsToShow: cards
   });
 
 

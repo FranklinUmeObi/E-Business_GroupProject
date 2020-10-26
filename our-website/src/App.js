@@ -20,7 +20,7 @@ function App() {
 
 const [cart, setCart] = useState({
   price : 0.00,
-  items: []
+
 });
 
 function editSearchTerm(e)
@@ -33,10 +33,10 @@ function editSearchTerm(e)
       <div className="App">
         <Header setSearchState={editSearchTerm} searchVal={search.searchTerm} price={cart.price} />
 
-        <Route exact={true} path="/" render={() => (<LandingPage query={search.searchTerm}/>)} setCart={setCart}/>
+        <Route exact={true} path="/" render={() => (<LandingPage query={search.searchTerm} setCart={setCart} cart={cart}  />)}/>
 
-        <Route exact={true} path="/checkout" render={() => (<CheckoutPage cart={cart.items}/>)}/>
-        <Route exact={true} path="/customise" component={CustomSockPage}/>
+        <Route exact={true} path="/checkout" render={() => (<CheckoutPage cart={cart}   />)}/>
+        <Route exact={true} path="/customise"   component={CustomSockPage}/>
 
         <Route exact={true} path="/about-us" component={AboutUsPage}/>
         <Route exact={true} path="/contact-us" component={ContactPage}/>

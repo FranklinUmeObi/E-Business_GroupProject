@@ -11,31 +11,21 @@ function Carousel() {
   return (
     <div className="carouselContainer">
          <ReactCarousel className="slider" showThumbs={false} showStatus={false} showArrows={true} autoPlay infiniteLoop>
+         <Link to="/customise">
                 <div>
-                    <img className="c_image" src={img1} alt="Slide1"/>
-                    <Link to="/customise">
-                        <button className="c_button">
-                            <h4 >Customise Your Perfect Christmas Sock</h4>
-                        </button>
-                    </Link>
+                    <img className="c_image" src={img1} alt="Slide1"/>                
                 </div>
-
+        </Link>
+        <Link to="/customise">
                 <div>
-                    <img className="c_image" src={img2} alt="Slide2" />
-                    <Link to="/customise">
-                        <button className="c_button">
-                            <h4> Customise Your Perfect Christmas Sock</h4>
-                        </button>
-                    </Link>
+                    <img className="c_image" src={img2} alt="Slide2"/>                
                 </div>
+        </Link>
+        <Link to="/customise">
                 <div>
-                    <img className="c_image" src={img3} alt="Slide3" />
-                    <Link to="/customise">
-                        <button className="c_button">
-                            <h4 >Customise Your Perfect Christmas Sock</h4>
-                        </button>
-                    </Link>
+                    <img className="c_image" src={img3} alt="Slide3"/>                
                 </div>
+        </Link>
             </ReactCarousel>
     </div>
   );

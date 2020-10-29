@@ -64,8 +64,11 @@ class JsColor extends Component {
    */
   onChange() {
     // Set state and call parent methods upon success set
+
+
+     let colorHex = this.colorInput.current.jscolor.toHEXString()
     this.setState(
-      { color: this.colorInput.current.jscolor.toHEXString() },
+      { color: colorHex},
       function() {
         this.colorSwatch.current.style.background = this.state.color;
         this.colorSwatch.current.style.color = this.state.color;
@@ -123,7 +126,7 @@ class JsColor extends Component {
               ref={this.colorSwatch}
             />
           </div>
-          <div className="Polaris-Connected__Item Polaris-Connected__Item--primary">
+          <div className="Polaris-Connected__Item Polaris-Connected__Item--primary vanishYouHoe">
             <div className="Polaris-TextField">
               <input
                 id={this.props.id}

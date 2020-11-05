@@ -36,6 +36,8 @@ function editSearchTerm(e)
     setSearch({searchTerm : e.target.value})
   }
 
+
+  //This doesn't update price correctly
   function addItemToCart(itemName, itemPrice, itemImage)
   {
     let cartItem = {name : itemName, price : itemPrice, img : itemImage}

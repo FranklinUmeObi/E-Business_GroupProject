@@ -7,8 +7,12 @@ import "./Jscolor.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 
-function CustomSockPage() {
+function CustomSockPage(props) {
 
+
+//----------------------------------------------------------------------
+  //State
+//----------------------------------------------------------------------
     const [state, setState] = useState({
         settings: {
             background_color: "#f4f"
@@ -21,6 +25,9 @@ function CustomSockPage() {
   });
    
 
+//----------------------------------------------------------------------
+  //Functions
+//----------------------------------------------------------------------
     function changeColor(color) {
         const overlay = document.getElementById("product-shape");
         overlay.style.fill = color
@@ -33,6 +40,10 @@ function CustomSockPage() {
         setTextState({text : e.target.value})
       }
 
+
+//----------------------------------------------------------------------
+  //HTML to render
+//----------------------------------------------------------------------
   return (
     <div className="CustomSockPage" id="custom">
       <div className="pageContainer">
@@ -61,7 +72,7 @@ function CustomSockPage() {
 
                <div className="step2">
                   <h3 className="step2title Polaris-Label__Text">3. Add To Cart</h3>
-                  <button className="btn menuButton cartButton">
+                  <button className="btn menuButton cartButton" onClick={() => props.addItemToCart(`Custom: ${textState.text}  in ${state.settings.background_color}`, 15.50, "Sock.png")}>
                     <h3 className="cartPrice">
                       <FontAwesomeIcon className="cartIcon" icon={faShoppingCart} />
                     </h3>

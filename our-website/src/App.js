@@ -14,29 +14,54 @@ import './App.css';
 
 function App() {
 
+//----------------------------------------------------------------------
+  //State
+//----------------------------------------------------------------------
   const [search, setSearch] = useState({
     searchTerm: ""
 });
 
 const [cart, setCart] = useState({
   price : 0.00,
+  cartItems : [ ]
 
 });
+
+//----------------------------------------------------------------------
+  //Functions
+//----------------------------------------------------------------------
 
 function editSearchTerm(e)
   {
     setSearch({searchTerm : e.target.value})
   }
 
+  function addItemToCart(itemName, itemPrice, itemImage)
+  {
+    let cartItem = {name : itemName, price : itemPrice, img : itemImage}
+    let oldCartTotal = cart.price
+    let newTotal = parseFloat(oldCartTotal) + parseFloat(itemPrice)
+    setCart(prevState => ({
+      price: newTotal,
+      cartItems: [...prevState.cartItems, cartItem]
+    }))
+  }
+
+
+
+
+//----------------------------------------------------------------------
+  //HTML To Render
+//----------------------------------------------------------------------
   return (
     <Router>
       <div className="App">
         <Header setSearchState={editSearchTerm} searchVal={search.searchTerm} price={cart.price} />
 
-        <Route exact={true} path="/" render={() => (<LandingPage query={search.searchTerm} setCart={setCart} cart={cart}  />)}/>
+        <Route exact={true} path="/" render={() => (<LandingPage query={search.searchTerm} addItemToCart={addItemToCart}  />)}/>
 
         <Route exact={true} path="/checkout" render={() => (<CheckoutPage cart={cart}   />)}/>
-        <Route exact={true} path="/customise"   component={CustomSockPage}/>
+        <Route exact={true} path="/customise"   render={() => (<CustomSockPage addItemToCart={addItemToCart}   />)}/>
 
         <Route exact={true} path="/about-us" component={AboutUsPage}/>
         <Route exact={true} path="/contact-us" component={ContactPage}/>

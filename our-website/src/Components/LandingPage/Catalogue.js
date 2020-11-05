@@ -6,7 +6,9 @@ import data from "../../Data/products.json";
 
 function Catalogue(props) {
 
-  
+//----------------------------------------------------------------------
+  //HTML Child
+//----------------------------------------------------------------------
   const cards = data.Products.map((product) => (
     <ProductCard
       key={product.id}
@@ -15,16 +17,23 @@ function Catalogue(props) {
       price={product.price}
       quantity={product.quantity}
       catagory={product.catagory}
-      setCart={props.setCart}
-      cart={props.cart}
+      addItemToCart={props.addItemToCart}
     />
   ));
 
+
+//----------------------------------------------------------------------
+  //State
+//----------------------------------------------------------------------
   const [state, setState] = useState({
     cardsToShow: cards
   });
 
 
+
+//----------------------------------------------------------------------
+  //Functions
+//----------------------------------------------------------------------
   function handleClick(event) {
     let filter = event.target.value;
     
@@ -66,6 +75,11 @@ function Catalogue(props) {
     }
   }
 
+
+
+//----------------------------------------------------------------------
+  //HTML to render
+//----------------------------------------------------------------------
   return (
     <div
       className="catalogue"

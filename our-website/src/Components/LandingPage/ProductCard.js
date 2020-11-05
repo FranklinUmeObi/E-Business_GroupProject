@@ -7,20 +7,6 @@ import "./ProductCard.css";
 
 function ProductCard(props) {
 
-
-
-
-function addToCart() {
-  let newPrice = parseFloat(props.cart.price)
-  let thisPrice = parseFloat(props.price)
-  let cartPrice = parseFloat(newPrice + thisPrice)
-
-  console.log(newPrice);
-  console.log(thisPrice);
-  console.log(cartPrice);
-  props.setCart({ price: cartPrice.toFixed(2)})
-}
-
   return (
     <div className="card">
 
@@ -42,7 +28,7 @@ function addToCart() {
              
           </div>
 
-        <button className="cardAddCart " onClick={addToCart}>
+        <button className="cardAddCart " onClick={() => props.addItemToCart(props.name, props.price, props.image)}>
             <h2 className="cardIconText">Add</h2>
           <FontAwesomeIcon icon={faShoppingCart} />
         </button>

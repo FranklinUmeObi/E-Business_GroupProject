@@ -42,7 +42,7 @@ function editSearchTerm(e)
     let oldCartTotal = cart.price
     let newTotal = parseFloat(oldCartTotal) + parseFloat(itemPrice)
     setCart(prevState => ({
-      price: newTotal,
+      price: newTotal.toFixed(2),
       cartItems: [...prevState.cartItems, cartItem]
     }))
   }

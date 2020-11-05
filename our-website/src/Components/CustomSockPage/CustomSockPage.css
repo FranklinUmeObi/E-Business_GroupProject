@@ -135,6 +135,27 @@ width: 200px;
   }
 }
 
+@media only screen and (max-width: 900px) {
+  .colorContainer{
+    width: 100vw;
+    margin: 0%;
+    margin-left: -18%;
+    top: 60vh;
+    background-color: #e6e7ee;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .colorContainer{
+    width: 100vw;
+    margin: 0%;
+    margin-left: -18%;
+    top: 40vh;
+    background-color: #e6e7ee;
+    align-items: center;
+  }
+}
 
 
 

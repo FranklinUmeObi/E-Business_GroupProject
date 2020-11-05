@@ -38,7 +38,7 @@ function Header(props) {
         value={props.searchVal}
         onChange={props.setSearchState} 
         className="form-control" 
-        placeholder="Search or use tab filter below" />
+        placeholder="Search..." />
       </div>
 
       <div className="logoContainer">

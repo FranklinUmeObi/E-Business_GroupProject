@@ -65,6 +65,17 @@ html {
     fill: #f4f;
   }
 
+  .sockText{
+    color: #fff;
+    font-size: 36px;
+    position: absolute;
+    margin-top: 24%;
+    margin-left: 32%;
+    width: 20%;
+    z-index: 20;
+    transform: rotate(-30deg);
+  }
+
 
   
 .jscolor {
@@ -92,6 +103,8 @@ html {
     margin-left:auto; margin-right:70px;
   }
 
+
+
   .step2{
 width: 200px;
   }
@@ -107,6 +120,23 @@ width: 200px;
   margin-top: 20px;
   z-index: 5;
 }
+
+
+
+
+@media only screen and (max-width: 1200px) {
+  .colorContainer{
+    width: 100vw;
+    margin: 0%;
+    margin-left: -18%;
+    top: 90vh;
+    background-color: #e6e7ee;
+    align-items: center;
+  }
+}
+
+
+
 
 
 

@@ -15,3 +15,18 @@
     flex-direction: column;
     align-items: center;
 }
+
+/*-------- CSS for About Us page ---------*/
+
+.aboutContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.aboutItem {
+  margin: 20px;
+}
+
+.aboutItem h1 {
+  padding-bottom: 10px;
+}

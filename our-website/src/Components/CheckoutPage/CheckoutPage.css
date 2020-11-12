@@ -6,7 +6,7 @@
 
 .pageContainer {
     margin-top: 100px;
-    padding: 30px;
+    padding: 10px;
     width: 80vw;
     background-color: #e6e7ee;
     border-color: #e6e7ee;
@@ -14,4 +14,30 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+
+.actualContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.items{
+    width: 400px;
+    height: 60vh;
+    outline: 0;
+    box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #FFFFFF;
+    margin: 40px;
+    margin-bottom: 0;
+    overflow-y: scroll; 
+}
+.payment{
+    width: 400px;
+    outline: 0;
+    box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #FFFFFF;
+    margin: 40px;
+    height: 60vh;
+    margin-bottom: 0;
 }

@@ -1,0 +1,31 @@
+.check {
+  display: flex;
+  margin: 10px;
+  margin-top: 15px;
+
+  background-color: #e6e7ee;
+  border-color: #e6e7ee;
+  box-shadow: 2px 2px 5px #b8b9be, -3px -3px 7px #ffffff;
+  border-radius: 16px;
+}
+
+.checkImg {
+  height: 90px;
+  transform: scale(1.25);
+}
+
+.checkText {
+  height: 90px;
+  width: 170px;
+  margin-left: 15px;
+  text-align: left;
+}
+
+.checkTit {
+}
+
+.checkPri {
+    color: red;
+    text-align: right;
+    margin-right: 20px;
+}

@@ -1,5 +1,6 @@
 import React from 'react'
 import "./CheckoutPage.css";
+import CheckoutCard from      './CheckoutCard'
 function CheckoutPage(props) {
 
     const items = props.cart.cartItems.map((product) => (
@@ -10,7 +11,31 @@ function CheckoutPage(props) {
         <div className="page" id="about">
              <div className="pageContainer" >
                 <h1>Checkout</h1>
-                <ul>{items}</ul>
+                <div className="actualContainer">
+
+                  <div className="items">
+                  <CheckoutCard/>
+                  <CheckoutCard/>
+                  <CheckoutCard/>
+                  <CheckoutCard/>
+                  <CheckoutCard/>
+                  <CheckoutCard/>
+                  <CheckoutCard/>
+                  <CheckoutCard/>
+                  <CheckoutCard/>
+                  <CheckoutCard/>
+                  </div>
+
+                  <div className="payment">
+                    <h2>Address</h2>
+                    <h2>Address</h2>
+                    <h2>Address</h2>
+                    <h2>Address</h2>
+                    <h2>Address</h2>
+                  </div>
+
+                </div>
+                
              </div>
         </div>
     )

@@ -30,3 +30,27 @@
 .aboutItem h1 {
   padding-bottom: 10px;
 }
+
+
+
+/* for customer care */
+
+.pageContainer textarea {
+  width: 600px;
+  height: 250px;
+}
+
+.pageContainer button {
+  width: 90px;
+  margin-left: 500px;
+  margin-top: 10px;
+}
+
+.otherInformation h3 {
+  margin-top: 40px;
+  margin-right: 350px;
+}
+
+.otherInformation h4 {
+  margin-top: 10px;
+}

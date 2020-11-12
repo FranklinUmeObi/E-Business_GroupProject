@@ -10,7 +10,7 @@ function CheckoutCard(props) {
             
             <div className="checkText">
                 <h2 className="checkTit">{props.name}</h2>
-                <h3 className="checkPri">{props.price}</h3>
+                <h3 className="checkPri">€{props.price}</h3>
             </div>
 
             <div className="checkExtras">

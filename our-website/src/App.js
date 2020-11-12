@@ -66,7 +66,6 @@ function editSearchTerm(e)
         <Route exact={true} path="/customise"   render={() => (<CustomSockPage addItemToCart={addItemToCart}   />)}/>
 
         <Route exact={true} path="/about-us" component={AboutUsPage}/>
-        <Route exact={true} path="/contact-us" component={ContactPage}/>
         <Route exact={true} path="/customer-care" component={CustomerCarePage}/>
 
       </div>

@@ -35,22 +35,22 @@
 
 /* for customer care */
 
-.pageContainer textarea {
+.pageContainerText{
   width: 600px;
   height: 250px;
 }
 
-.pageContainer button {
+.pageContainerButton{
   width: 90px;
   margin-left: 500px;
   margin-top: 10px;
 }
 
-.otherInformation h3 {
+.three {
   margin-top: 40px;
   margin-right: 350px;
 }
 
-.otherInformation h4 {
+.four{
   margin-top: 10px;
 }

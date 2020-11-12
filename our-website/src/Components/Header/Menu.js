@@ -27,6 +27,12 @@ function Menu(props) {
             </button>
           </Link>
 
+          <Link to="/customise">
+            <button className="btn menuItem">
+              <h3 className="menuItemText">Customise</h3>
+            </button>
+          </Link>
+
           <Link to="/#packs">
             <button className="btn menuItem">
               <h3 className="menuItemText">Packs</h3>
@@ -51,11 +57,6 @@ function Menu(props) {
             </button>
           </Link>
 
-          <Link to="/contact-us">
-            <button className="btn menuItem">
-              <h3 className="menuItemText">Contact</h3>
-            </button>
-          </Link>
           <br/>
         </div>
       </div>

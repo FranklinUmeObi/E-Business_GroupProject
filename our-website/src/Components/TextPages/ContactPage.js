@@ -6,8 +6,8 @@ function ContactPage() {
     return (
         <div className="textPage" id="about">
              <div className="pageContainer" >
-             <h1>ContactPage</h1>
-
+             <h1>Contact Us</h1>
+             
              
              </div>
         </div>

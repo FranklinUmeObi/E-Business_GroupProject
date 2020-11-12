@@ -67,7 +67,7 @@ function editSearchTerm(e)
     }
 
     let updatedPrice = cart.price - itemPrice
-
+    updatedPrice = updatedPrice.toFixed(2)
     setCart(prevState => ({
       price: updatedPrice,
       cartItems: updatedCart

@@ -45,3 +45,23 @@
 ::-webkit-scrollbar {
     display: none;
 }
+
+
+.inputLine{
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inputBox{
+    width: 170px;
+}
+
+
+.outputText{
+    text-align: center;
+}
+
+.margBot{
+    margin-bottom: 8px;
+}

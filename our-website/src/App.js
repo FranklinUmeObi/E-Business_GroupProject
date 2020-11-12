@@ -6,7 +6,6 @@ import LandingPage from './Components/LandingPage/LandingPage'
 import CheckoutPage from './Components/CheckoutPage/CheckoutPage'
 import CustomSockPage from './Components/CustomSockPage/CustomSockPage'
 import AboutUsPage from './Components/TextPages/AboutUsPage'
-import ContactPage from './Components/TextPages/ContactPage'
 import CustomerCarePage from './Components/TextPages/CustomerCarePage'
 
 import './App.css';
@@ -37,7 +36,7 @@ function editSearchTerm(e)
   }
 
 
-  //This doesn't update price correctly
+  //This doesn't update price correctly if there was no re-render
   function addItemToCart(itemName, itemPrice, itemImage)
   {
     let cartItem = {name : itemName, price : itemPrice, img : itemImage}
@@ -49,6 +48,31 @@ function editSearchTerm(e)
     }))
   }
 
+
+  function removeItemFromCart(itemName, itemPrice)
+  {
+    let items = cart.cartItems
+    let updatedCart = []
+    let found = false
+    for (let i = 0; i < items.length; i++) 
+    {
+      const item = items[i];
+      if(item.name === itemName && found !== true)
+      {
+        found = true
+      }
+      else{
+        updatedCart.push(item)
+      }
+    }
+
+    let updatedPrice = cart.price - itemPrice
+
+    setCart(prevState => ({
+      price: updatedPrice,
+      cartItems: updatedCart
+    }))
+  }
 
 
 
@@ -62,7 +86,7 @@ function editSearchTerm(e)
 
         <Route exact={true} path="/" render={() => (<LandingPage query={search.searchTerm} addItemToCart={addItemToCart}  />)}/>
 
-        <Route exact={true} path="/checkout" render={() => (<CheckoutPage cart={cart}   />)}/>
+        <Route exact={true} path="/checkout" render={() => (<CheckoutPage cart={cart} removeItemFromCart={removeItemFromCart}  />)}/>
         <Route exact={true} path="/customise"   render={() => (<CustomSockPage addItemToCart={addItemToCart}   />)}/>
 
         <Route exact={true} path="/about-us" component={AboutUsPage}/>

@@ -224,13 +224,13 @@ This is the Neumorphism styles
 
 .form-control:disabled,
 .form-control[readonly] {
-    background-color: #e2ecfd;
+    background-color: #dee9f7;
     opacity: 1;
 }
 
 select.form-control:focus::-ms-value {
     color: #44476A;
-    background-color: #e2ecfd;
+    background-color: #dee9f7;
 }
 
 .form-control-file,

@@ -1,5 +1,5 @@
 .textPage {
-    background: #e2ecfd;
+    background: #dee9f7;
     display: flex;
     justify-content: center;
 }
@@ -8,7 +8,7 @@
     margin-top: 100px;
     padding: 30px;
     width: 80vw;
-    background-color: #e2ecfd;
+    background-color: #dee9f7;
     border-color: #e2ecfd;
     box-shadow: 2px 2px 5px #b7c4dd, -3px -3px 7px #eafcfc;
     display: flex;

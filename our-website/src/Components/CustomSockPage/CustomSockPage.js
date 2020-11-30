@@ -46,7 +46,7 @@ function CustomSockPage(props) {
 //----------------------------------------------------------------------
   return (
     <div className="CustomSockPage" id="custom">
-      <div className="pageContainer">
+      <div className="pageContainerCus">
 
           <h1>Your Custom Sock</h1>
           <h2>In 3 easy steps</h2>
@@ -81,8 +81,9 @@ function CustomSockPage(props) {
 
             </div>
         </div>
-        
+        <br/>
       </div>
+      <br/>
 
     </div>
   );

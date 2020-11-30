@@ -4,13 +4,11 @@
     justify-content: center;
 }
 
-.pageContainer {
+.pageContainerChe {
     margin-top: 100px;
     padding: 10px;
-    width: 90vw;
+    width: 95vw;
     background-color: #dee9f7;
-    border-color: #e2ecfd;
-    box-shadow: 2px 2px 5px #b7c4dd, -3px -3px 7px #eafcfc;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,16 +23,19 @@
 }
 
 .items{
-    width: 400px;
+    width: 500px;
     height: 60vh;
+    border-radius: 2.55rem;
     outline: 0;
     box-shadow: inset 2px 2px 5px #b7c4dd, inset -3px -3px 7px #eafcfc;
     margin: 40px;
     margin-bottom: 0;
     overflow-y: scroll; 
+    
 }
 .payment{
-    width: 400px;
+    width: 500px;
+    border-radius: 2.55rem;
     outline: 0;
     box-shadow: inset 2px 2px 5px #b7c4dd, inset -3px -3px 7px #eafcfc;
     margin: 40px;
@@ -54,8 +55,8 @@
 }
 
 .inputBox{
-    width: 170px;
-}
+    width: 170px; 
+    }
 
 
 .outputText{

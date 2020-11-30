@@ -1,6 +1,6 @@
 .check {
   display: flex;
-  margin: 10px;
+  margin: 20px;
   margin-top: 15px;
 
   background-color: #dee9f7;
@@ -16,9 +16,10 @@
 
 .checkText {
   height: 90px;
-  width: 170px;
+  width: 90%;
   margin-left: 15px;
   text-align: left;
+  padding: 8px;
 }
 
 /* .checkTit {
@@ -28,6 +29,7 @@
   color: red;
   text-align: right;
   margin-right: 20px;
+  margin-top: 25px;
 }
 
 .checkExtras{

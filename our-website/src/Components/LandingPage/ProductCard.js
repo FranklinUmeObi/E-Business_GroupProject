@@ -16,10 +16,10 @@ function ProductCard(props) {
       </div>
 
       <div className="cardText">
-        <h3>{props.name}</h3>
-        <div className="stock">
+        <h2>{props.name}</h2>
+        {/* <div className="stock">
             <p className="stockText">{props.quantity} in stock</p>
-        </div>
+        </div> */}
       </div>
 
       <div className="cardButtons">

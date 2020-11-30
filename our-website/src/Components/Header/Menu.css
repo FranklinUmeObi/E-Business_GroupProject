@@ -1,32 +1,34 @@
 .menuContainer {
     top: 100px;
-    background: #e6e7ee;
+    background: #dee9f7;
     position: fixed;
     left: 0;
     width: 250px;
-    box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #FFFFFF;
+    box-shadow: inset 2px 2px 5px #b7c4dd, inset -3px -3px 7px #eafcfc;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     z-index: 45;
+    border-radius: 1.55rem;
 }
 
 .menuItem {
     color: #31344b;
     margin: 8px 40px;
-    width: 140px;
-    background-color: #e6e7ee;
-    border-color: #e6e7ee;
-    box-shadow: 2px 2px 5px #b8b9be, -3px -3px 7px #FFFFFF;
+    width: 170px;
+    background-color: #dee9f7;
+    border-color: #e2ecfd;
+    box-shadow: 2px 2px 5px #b7c4dd, -3px -3px 7px #eafcfc;
     display: flex;
     flex-direction: row;
+    border-radius: 1.55rem;
 }
 
 .menuItem:hover {
     color: #000;
-    background-color: #e6e7ee;
-    border-color: #e6e7ee;
-    box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #FFFFFF;
+    background-color: #dee9f7;
+    border-color: #e2ecfd;
+    box-shadow: inset 2px 2px 5px #b7c4dd, inset -3px -3px 7px #eafcfc;
 }
 
 .closeContainer {
@@ -34,6 +36,7 @@
     margin: 10px;
     display: flex;
     flex-direction: row-reverse;
+    border-radius: 1.55rem;
 }
 
 
@@ -58,7 +61,7 @@ Neumorp
     padding: 0.55rem 0.95rem;
     font-size: 1rem;
     line-height: 1.5;
-    border-radius: 0.55rem;
+    border-radius: 1.55rem;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
@@ -76,7 +79,7 @@ Neumorp
 .btn:focus,
 .btn.focus {
     outline: 0;
-    box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #FFFFFF;
+    box-shadow: inset 2px 2px 5px #b7c4dd, inset -3px -3px 7px #eafcfc;
 }
 
 .btn.disabled,
@@ -87,10 +90,10 @@ Neumorp
 
 .btn:not(:disabled):not(.disabled):active,
 .btn:not(:disabled):not(.disabled).active {
-    box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #FFFFFF;
+    box-shadow: inset 2px 2px 5px #b7c4dd, inset -3px -3px 7px #eafcfc;
 }
 
 .btn:not(:disabled):not(.disabled):active:focus,
 .btn:not(:disabled):not(.disabled).active:focus {
-    box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #FFFFFF, inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #FFFFFF;
+    box-shadow: inset 2px 2px 5px #b7c4dd, inset -3px -3px 7px #eafcfc, inset 2px 2px 5px #b7c4dd, inset -3px -3px 7px #eafcfc;
 }

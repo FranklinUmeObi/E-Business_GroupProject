@@ -46,7 +46,7 @@ function CustomSockPage(props) {
 //----------------------------------------------------------------------
   return (
     <div className="CustomSockPage" id="custom">
-      <div className="pageContainer">
+      <div className="pageContainerCus">
 
           <h1>Your Custom Sock</h1>
           <h2>In 3 easy steps</h2>
@@ -72,7 +72,7 @@ function CustomSockPage(props) {
 
                <div className="step2">
                   <h3 className="step2title Polaris-Label__Text">3. Add To Cart</h3>
-                  <button className="btn menuButton cartButton" onClick={() => props.addItemToCart(`Custom Sock in ${state.settings.background_color}`, 15.50, "stock.png")}>
+                  <button className="btn menuButton cartButton" onClick={() => props.addItemToCart(`Sock in ${state.settings.background_color}`, 15.50, "stock.png")}>
                     <h3 className="cartPrice">
                       <FontAwesomeIcon className="cartIcon" icon={faShoppingCart} />
                     </h3>
@@ -81,8 +81,9 @@ function CustomSockPage(props) {
 
             </div>
         </div>
-        
+        <br/>
       </div>
+      <br/>
 
     </div>
   );

@@ -24,7 +24,7 @@ function sendAlert() {
 
   return (
     <div className="page" id="about">
-      <div className="pageContainer">
+      <div className="pageContainerChe">
         <h1>Checkout</h1>
         <div className="actualContainer">
           <div className="items">
@@ -33,16 +33,16 @@ function sendAlert() {
 
           <div className="payment">
               <div className="inputLine">
-                <TextField id="filled-basic" label="First Name" variant="filled" className="inputBox"/>
-                <TextField id="filled-basic" label="Last Name" variant="filled" className="inputBox"/>
+                <TextField id="standard-basic" label="First Name"  className="inputBox"/>
+                <TextField id="standard-basic" label="Last Name"  className="inputBox"/>
               </div>
               <div className="inputLine">
-                <TextField id="filled-basic" label="Address Line 1" variant="filled" className="inputBox"/>
-                <TextField id="filled-basic" label="Address Line 2" variant="filled" className="inputBox"/>
+                <TextField id="standard-basic" label="Address Line 1"  className="inputBox"/>
+                <TextField id="standard-basic" label="Address Line 2"  className="inputBox"/>
               </div>
               <div className="inputLine">
-                <TextField id="filled-basic" label="PostCode" variant="filled" className="inputBox"/>
-                <TextField id="filled-basic" label="Country" variant="filled" className="inputBox"/>
+                <TextField id="standard-basic" label="PostCode"  className="inputBox"/>
+                <TextField id="standard-basic" label="Country"  className="inputBox"/>
               </div>
 
               <div className="outputText">
@@ -56,8 +56,13 @@ function sendAlert() {
 
           </div>
         </div>
+        <br/>
+        <br/>
+        <br/>
       </div>
+     
     </div>
+    
   );
 }
 

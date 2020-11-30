@@ -1,10 +1,10 @@
 .menuContainer {
     top: 100px;
-    background: #e6e7ee;
+    background: #e2ecfd;
     position: fixed;
     left: 0;
     width: 250px;
-    box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #FFFFFF;
+    box-shadow: inset 2px 2px 5px #b7c4dd, inset -3px -3px 7px #eafcfc;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -15,18 +15,18 @@
     color: #31344b;
     margin: 8px 40px;
     width: 140px;
-    background-color: #e6e7ee;
-    border-color: #e6e7ee;
-    box-shadow: 2px 2px 5px #b8b9be, -3px -3px 7px #FFFFFF;
+    background-color: #e2ecfd;
+    border-color: #e2ecfd;
+    box-shadow: 2px 2px 5px #b7c4dd, -3px -3px 7px #eafcfc;
     display: flex;
     flex-direction: row;
 }
 
 .menuItem:hover {
     color: #000;
-    background-color: #e6e7ee;
-    border-color: #e6e7ee;
-    box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #FFFFFF;
+    background-color: #e2ecfd;
+    border-color: #e2ecfd;
+    box-shadow: inset 2px 2px 5px #b7c4dd, inset -3px -3px 7px #eafcfc;
 }
 
 .closeContainer {
@@ -76,7 +76,7 @@ Neumorp
 .btn:focus,
 .btn.focus {
     outline: 0;
-    box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #FFFFFF;
+    box-shadow: inset 2px 2px 5px #b7c4dd, inset -3px -3px 7px #eafcfc;
 }
 
 .btn.disabled,
@@ -87,10 +87,10 @@ Neumorp
 
 .btn:not(:disabled):not(.disabled):active,
 .btn:not(:disabled):not(.disabled).active {
-    box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #FFFFFF;
+    box-shadow: inset 2px 2px 5px #b7c4dd, inset -3px -3px 7px #eafcfc;
 }
 
 .btn:not(:disabled):not(.disabled):active:focus,
 .btn:not(:disabled):not(.disabled).active:focus {
-    box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #FFFFFF, inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #FFFFFF;
+    box-shadow: inset 2px 2px 5px #b7c4dd, inset -3px -3px 7px #eafcfc, inset 2px 2px 5px #b7c4dd, inset -3px -3px 7px #eafcfc;
 }

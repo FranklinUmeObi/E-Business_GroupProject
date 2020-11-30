@@ -1,5 +1,5 @@
 .page {
-    background: #e6e7ee;
+    background: #e2ecfd;
     display: flex;
     justify-content: center;
 }
@@ -8,9 +8,9 @@
     margin-top: 100px;
     padding: 10px;
     width: 90vw;
-    background-color: #e6e7ee;
-    border-color: #e6e7ee;
-    box-shadow: 2px 2px 5px #b8b9be, -3px -3px 7px #FFFFFF;
+    background-color: #e2ecfd;
+    border-color: #e2ecfd;
+    box-shadow: 2px 2px 5px #b7c4dd, -3px -3px 7px #eafcfc;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,7 +28,7 @@
     width: 400px;
     height: 60vh;
     outline: 0;
-    box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #FFFFFF;
+    box-shadow: inset 2px 2px 5px #b7c4dd, inset -3px -3px 7px #eafcfc;
     margin: 40px;
     margin-bottom: 0;
     overflow-y: scroll; 
@@ -36,7 +36,7 @@
 .payment{
     width: 400px;
     outline: 0;
-    box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #FFFFFF;
+    box-shadow: inset 2px 2px 5px #b7c4dd, inset -3px -3px 7px #eafcfc;
     margin: 40px;
     height: 60vh;
     margin-bottom: 0;

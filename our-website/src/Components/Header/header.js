@@ -53,7 +53,7 @@ function Header(props) {
               <FontAwesomeIcon className="cartIcon" icon={faShoppingCart} />
             </h3>
           </button>
-          <p className="disclaimer">*Total may not be displayed correctly in header</p>
+          {/* <p className="disclaimer">*Total may not be displayed correctly in header</p> */}
         </Link>
       </div>
     </div>

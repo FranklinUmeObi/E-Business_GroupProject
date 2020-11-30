@@ -8,7 +8,7 @@ import './LandingPage.css';
 function LandingPage(props) {
     return (
         <div className="LandingPage" id="home">
-             <div className="pageContainer" >
+             <div className="pageContainer1" >
                  <h1 className="title" >Customise your stocking today</h1>
                  <Carousel />
                  <h1 className="title" id="packs">Our Packs</h1>

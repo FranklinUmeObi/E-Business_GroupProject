@@ -1,10 +1,10 @@
 .LandingPage {
-    background: #e6e7ee;
+    background: #dee9f7;
     display: flex;
     justify-content: center;
 }
 
-.pageContainer1 {
+.pageContainerLand {
     margin-top: 100px;
     padding: 30px;
     width: 100vw;

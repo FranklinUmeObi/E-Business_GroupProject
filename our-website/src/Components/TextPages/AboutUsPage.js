@@ -18,7 +18,7 @@ function AboutUsPage() {
 
                 <h1>About Our Founders</h1>
                 <div className = "aboutContainer">
-                  <img className = "aboutItem" src="/AboutUsImages/Franklin.jpg" height="250px" width="250px"></img>
+                  <img className = "aboutItem" src={ require(`./AboutUsImages/Franklin.jpg`) } height="250px" width="250px"></img>
                   <div className= "aboutItem">
                     <h2> Franklin </h2>
                     <ul>
@@ -42,11 +42,11 @@ function AboutUsPage() {
                       <li>Decorating Skill: Able to reach low spots without bending down and causing back issues</li>
                     </ul>
                   </div>
-                  <img className = "aboutItem" src="/AboutUsImages/Jenna.png" height="250px" width="250px"></img>
+                  <img className = "aboutItem" src={ require(`./AboutUsImages/Jenna.png`) } height="250px" width="250px"></img>
                 </div>
 
                 <div className = "aboutContainer">
-                  <img className = "aboutItem" src="/AboutUsImages/Sam.jpg" height="250px" width="250px"></img>
+                  <img className = "aboutItem" src={ require(`./AboutUsImages/Sam.jpg`) } height="250px" width="250px"></img>
                   <div className= "aboutItem">
                     <h2> Sam </h2>
                     <ul>

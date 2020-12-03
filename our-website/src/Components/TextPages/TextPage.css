@@ -10,7 +10,7 @@
     width: 90vw;
     background-color: #dee9f7;
     border-color: #e2ecfd;
-    
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,17 +21,21 @@
 .aboutContainer {
   display: flex;
   flex-direction: row;
+  padding-bottom: 25px;
 }
 
 .aboutItem {
   margin: 20px;
+  padding-left: 20px;
 }
 
 .aboutItem h1 {
   padding-bottom: 10px;
 }
 
-
+.aboutItem li {
+  list-style-type: none;
+}
 
 /* for customer care */
 

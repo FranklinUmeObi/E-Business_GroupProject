@@ -32,7 +32,7 @@ function addLike(){
 
       <div className="cardImage">
         <img className="img" src={ require(`../../Assets/ProductImages/${props.image}`) } alt={props.name} />
-        
+
       </div>
 
       <div className="cardText">
@@ -45,15 +45,30 @@ function addLike(){
       <div className="cardButtons">
           <div className="price">
              <h3>€{props.price}</h3>
-             
+
           </div>
 
-        <button className="cardAddCart " onClick={() => props.addItemToCart(props.name, props.price, props.image)}>
+      <div className="recommendationContainer">
+        <Popup trigger={
+        <button className="cardAddCart" onClick={() => props.addItemToCart(props.name, props.price, props.image)}>
             <h2 className="cardIconText">Add</h2>
           <FontAwesomeIcon icon={faShoppingCart} />
-        </button>
-        
-      </div>
+        </button>}modal nested>
+        {close => (
+          <div className="popUp flip-diagonal-1-fwd">
+          <h3>Good Choice! We think you would also like these options... </h3>
+
+          <div className="review">
+            <h3>Maggie Musk</h3>
+            <p>Fairly deece I must say. Kiddos are only raving over em</p>
+          </div>
+
+          <button className="popButton" onClick={() => {close();}}>Close Reviews</button>
+          </div>
+        )}
+        </Popup>
+        </div>
+
 
       <div className="reviewsContainer">
         <Popup trigger={<button className="stock"> <h2 className="stockText ">Reviews</h2> </button>}modal nested>
@@ -68,7 +83,7 @@ function addLike(){
                   <FavoriteIcon style={{ color: stateColour.heart }}/>
                 </IconButton>
               </div>
-              
+
               <div className="review">
                 <h3>Maggie Musk</h3>
                 <p>Fairly deece I must say. Kiddos are only raving over em</p>
@@ -83,6 +98,7 @@ function addLike(){
             </div>
           )}
         </Popup>
+        </div>
         </div>
       </div>
     );

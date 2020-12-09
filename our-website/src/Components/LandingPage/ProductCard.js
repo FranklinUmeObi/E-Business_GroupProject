@@ -26,6 +26,22 @@ function addLike(){
     setStateColour({heart: 'red'});
 };
 
+function recommend(itemName, itemCatagory){
+  let list = [];
+  itemName = itemName.toLowerCase();
+  itemCatagory = itemCatagory.toLowerCase();
+
+  for(let card of state.cardsToShow){
+    let name = card.props.name.toLowerCase();
+    let catagory = card.props.catagory.toLowerCase();
+
+    if (name.includes(itemName) || catagory.includes(itemCatagory)) {
+      list.push(card);
+    }
+  }
+  setState({ ...state, cardsToShow: list });
+};
+
 
   return (
     <div className="card">
@@ -50,7 +66,7 @@ function addLike(){
 
       <div className="recommendationContainer">
         <Popup trigger={
-        <button className="cardAddCart" onClick={() => props.addItemToCart(props.name, props.price, props.image)}>
+        <button className="cardAddCart" onClick={() => props.addItemToCart(props.name, props.price, props.image), recommend(props.name, props.catagory)}>
             <h2 className="cardIconText">Add</h2>
           <FontAwesomeIcon icon={faShoppingCart} />
         </button>}modal nested>
@@ -63,7 +79,7 @@ function addLike(){
             <p>Fairly deece I must say. Kiddos are only raving over em</p>
           </div>
 
-          <button className="popButton" onClick={() => {close();}}>Close Reviews</button>
+          <button className="popButton" onClick={() => {close();}}>Close</button>
           </div>
         )}
         </Popup>

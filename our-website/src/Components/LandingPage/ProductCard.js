@@ -20,6 +20,13 @@ const [stateColour, setStateColour] = useState({
   heart: 'grey'
 });
 
+const reviews = props.review.map((rev,i) => (
+  <div className="review">
+    <h3>{rev.name}</h3>
+    <p>{rev.body}</p>
+  </div>
+));
+
 function addLike(){
   let newCount = state.likes + 1;
     setState({likes: newCount});
@@ -69,14 +76,7 @@ function addLike(){
                 </IconButton>
               </div>
               
-              <div className="review">
-                <h3>Maggie Musk</h3>
-                <p>Fairly deece I must say. Kiddos are only raving over em</p>
-              </div>
-              <div className="review">
-                <h3>Lil Piddle</h3>
-                <p>Groovy Baby</p>
-              </div>
+              {reviews}
 
                 <button className="popButton" onClick={() => {close();}}>Close Reviews</button>
 

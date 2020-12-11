@@ -18,6 +18,7 @@ function Catalogue(props) {
       quantity={product.quantity}
       catagory={product.catagory}
       addItemToCart={props.addItemToCart}
+      review={product.review}
     />
   ));
 

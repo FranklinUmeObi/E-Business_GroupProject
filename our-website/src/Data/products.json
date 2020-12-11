@@ -5,7 +5,15 @@
             "image": "SantaRed.png",
             "price": "8.99",
             "quantity": 13,
-            "catagory": "Traditional"
+            "catagory": "Traditional",
+            "review": [{
+                "name":"Claire Underwood",
+                "body": "Great quality, cute picture"
+            },
+            {
+                "name":"Jed Bartlet",
+                "body": "very festive, the wife loves them :)"
+            }]
         },
         {
             "id": 1,
@@ -13,7 +21,15 @@
             "image": "1.png",
             "price": "22.99",
             "quantity": 7,
-            "catagory": "Fancy"
+            "catagory": "Fancy",
+            "review": [{
+                "name":"Toby Ziegler",
+                "body": "They were nice but the fluff was too fluffy for me"
+            },
+            {
+                "name":"Andrea Wyatt",
+                "body": "I love these!"
+            }]
         },
         {
             "id": 2,
@@ -21,7 +37,11 @@
             "image": "SantaBlue.png",
             "price": "8.99",
             "quantity": 2,
-            "catagory": "Traditional"
+            "catagory": "Traditional",
+            "review": [{
+                "name":"Sam Seaborne",
+                "body": "It was delivered with a rip, but customer service was excellent and handled it right away"
+            }]
         },
         {
             "id": 3,
@@ -29,7 +49,19 @@
             "image": "2.png",
             "price": "12.99",
             "quantity": 8,
-            "catagory": "Fancy"
+            "catagory": "Fancy",
+            "review": [{
+                "name":"Donna Moss",
+                "body": "my kids cant get enough of them!"
+            },
+            {
+                "name":"Josh Lyman",
+                "body": "They smelled kinda weird but fine other than that"
+            },
+            {
+                "name": "Cliff Kingsbury",
+                "body": "as expected"
+            }]
         },
         {
             "id": 4,
@@ -37,7 +69,15 @@
             "image": "SnowmanRed.png",
             "price": "8.99",
             "quantity": 12,
-            "catagory": "Traditional"
+            "catagory": "Traditional",
+            "review": [{
+                "name":"Leo McGarry",
+                "body": "great quality, they were the perfect present for my grandchildren"
+            },
+            {
+                "name":"Margaret Hooper",
+                "body": "It's fun and festive"
+            }]
         },
         {
             "id": 5,
@@ -45,7 +85,11 @@
             "image": "3.png",
             "price": "11.99",
             "quantity": 4,
-            "catagory": "Fancy"
+            "catagory": "Fancy",
+            "review": [{
+                "name":"Ben Heather",
+                "body": "Misleading, should have been named walnuts"
+            }]
         },
         {
             "id": 6,
@@ -53,7 +97,15 @@
             "image": "SnowmanBlue.png",
             "price": "8.99",
             "quantity": 0,
-            "catagory": "Traditional"
+            "catagory": "Traditional",
+            "review": [{
+                "name":"Abby Bartlet",
+                "body": "They are too bright for me"
+            },
+            {
+                "name":"Amy Gardner",
+                "body": "Amazing quality, will last many christmases"
+            }]
         },
         {
             "id": 7,
@@ -61,7 +113,19 @@
             "image": "4.png",
             "price": "12.99",
             "quantity": 4,
-            "catagory": "Fancy"
+            "catagory": "Fancy",
+            "review": [{
+                "name":"Charlie Young",
+                "body": "can hold lots of presents"
+            },
+            {
+                "name":"Zoe Bartlet",
+                "body": "Shipped very fast and i got it in time for Christmas!"
+            },
+            {
+                "name":"John Paul",
+                "body": "great stocking, they even shipped internationally to France very quickly"
+            }]
         },
         {
             "id": 8,
@@ -69,7 +133,15 @@
             "image": "SnowflakeRed.png",
             "price": "6.99",
             "quantity": 9,
-            "catagory": "Traditional"
+            "catagory": "Traditional",
+            "review": [{
+                "name":"Will Bailey",
+                "body": "Very pleased"
+            },
+            {
+                "name":"Kate Harper",
+                "body": "They are very homey and not too flashy on my wall"
+            }]
         },
         {
             "id": 9,
@@ -77,7 +149,15 @@
             "image": "5.png",
             "price": "10.99",
             "quantity": 22,
-            "catagory": "Fancy"
+            "catagory": "Fancy",
+            "review": [{
+                "name": "CJ Cregg",
+                "body": "I bought one for my goldfish Gail, he loves it"
+            },
+            {
+                "name": "Danny Concannon",
+                "body": "Bought one for my girlfriend so she bought one for her fish. 10/10 both loved it"
+            }]
         },
         {
             "id": 10,
@@ -85,7 +165,11 @@
             "image": "SnowFlakeBlue.png",
             "price": "8.99",
             "quantity": 5,
-            "catagory": "Traditional"
+            "catagory": "Traditional",
+            "review": [{
+                "name":"Joey Lucas",
+                "body": "They're very soft"
+            }]
         },
         {
             "id": 11,
@@ -93,7 +177,15 @@
             "image": "6.png",
             "price": "11.99",
             "quantity": 1,
-            "catagory": "Fancy"
+            "catagory": "Fancy",
+            "review": [{
+                "name":"Matt Santos",
+                "body": "Great for schools"
+            },
+            {
+                "name":"Arnie Vinick",
+                "body": "Too expensive"
+            }]
         },
         {
             "id": 12,
@@ -101,7 +193,11 @@
             "image": "ElfRed.png",
             "price": "7.99",
             "quantity": 12,
-            "catagory": "Traditional"
+            "catagory": "Traditional",
+            "review": [{
+                "name":"John Hoynes",
+                "body": "Very practical"
+            }]
         },
         {
             "id": 13,
@@ -109,7 +205,15 @@
             "image": "7.png",
             "price": "13.99",
             "quantity": 3,
-            "catagory": "Fancy"
+            "catagory": "Fancy",
+            "review": [{
+                "name":"Bonnie Parikh",
+                "body": "The loop is too fragile so it is hard to hang"
+            },
+            {
+                "name":"Ginger Webster",
+                "body": "Nigel is cute"
+            }]
         },
         {
             "id": 14,
@@ -117,7 +221,15 @@
             "image": "ElfBlue.png",
             "price": "7.99",
             "quantity": 1,
-            "catagory": "Traditional"
+            "catagory": "Traditional",
+            "review": [{
+                "name":"Larry Duffy",
+                "body": "So festive!"
+            },
+            {
+                "name":"Ed Smith",
+                "body": "Great quality"
+            }]
         },
         {
             "id": 15,
@@ -125,7 +237,11 @@
             "image": "8.png",
             "price": "14.99",
             "quantity": 7,
-            "catagory": "Fancy"
+            "catagory": "Fancy",
+            "review": [{
+                "name":"Mandy Hampton",
+                "body": "It was nice but then I lost it"
+            }]
         },
         {
             "id": 16,
@@ -133,7 +249,15 @@
             "image": "CaneRed.png",
             "price": "6.99",
             "quantity": 13,
-            "catagory": "Traditional"
+            "catagory": "Traditional",
+            "review": [{
+                "name":"Annabeth Schott",
+                "body": "Amazing! So festive! Definitely want lots more!"
+            },
+            {
+                "name":"Ainsley Hayes",
+                "body": "Great stockings, looks good and feels good quality"
+            }]
         },
         {
             "id": 17,
@@ -141,7 +265,15 @@
             "image": "9.png",
             "price": "12.99",
             "quantity": 17,
-            "catagory": "Fancy"
+            "catagory": "Fancy",
+            "review": [{
+                "name":"Dolores Landingham",
+                "body": "Charming and delightful stockings."
+            },
+            {
+                "name":"Deb Fiderer",
+                "body": "My alpacas loved to eat out of them"
+            }]
         },
         {
             "id": 18,
@@ -149,7 +281,15 @@
             "image": "CaneBlue.png",
             "price": "6.99",
             "quantity": 14,
-            "catagory": "Traditional"
+            "catagory": "Traditional",
+            "review": [{
+                "name":"Percy Fitzwallace",
+                "body": "Sufficient"
+            },
+            {
+                "name":"Nancy McNally",
+                "body": "I loved hanging these stockings! They're great products"
+            }]
         },
         {
             "id": 19,
@@ -157,7 +297,11 @@
             "image": "10.png",
             "price": "32.99",
             "quantity": 1,
-            "catagory": "Fancy"
+            "catagory": "Fancy",
+            "review": [{
+                "name":"Bruno Gianelli",
+                "body": "Great for kids"
+            }]
         },
         {
             "id": 20,
@@ -165,7 +309,15 @@
             "image": "TreeRed.png",
             "price": "8.99",
             "quantity": 5,
-            "catagory": "Traditional"
+            "catagory": "Traditional",
+            "review": [{
+                "name":"Mallory O'Brien",
+                "body": "It was perfect, it matches all my other Christmas decorations perfectly"
+            },
+            {
+                "name":"Sheila Brooks",
+                "body": "Arrived quickly, was a bit bigger than I thought"
+            }]
         },
         {
             "id": 21,
@@ -173,7 +325,15 @@
             "image": "11.png",
             "price": "15.99",
             "quantity": 0,
-            "catagory": "Fancy"
+            "catagory": "Fancy",
+            "review": [{
+                "name":"Oliver Babish",
+                "body": "Great stockings and wonderful customer service"
+            },
+            {
+                "name":"Greg Brock",
+                "body": "Looks yummy :)"
+            }]
         },
         {
             "id": 22,
@@ -181,7 +341,15 @@
             "image": "TreeBlue.png",
             "price": "8.99",
             "quantity": 21,
-            "catagory": "Traditional"
+            "catagory": "Traditional",
+            "review": [{
+                "name":"Lord John Marbury",
+                "body": "Absolutely Splendid"
+            },
+            {
+                "name":"Joe Quincy",
+                "body": "They were good I guess"
+            }]
         }
 
 

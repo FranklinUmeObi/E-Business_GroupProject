@@ -8,6 +8,9 @@ import CustomSockPage from './Components/CustomSockPage/CustomSockPage'
 import AboutUsPage from './Components/TextPages/AboutUsPage'
 import CustomerCarePage from './Components/TextPages/CustomerCarePage'
 
+import FamilyPackPage from './Components/PackPages/FamilyPage'
+import WorkPackPage from './Components/PackPages/WorkPage'
+
 import './App.css';
 
 
@@ -88,7 +91,8 @@ function editSearchTerm(e)
 
         <Route exact={true} path="/checkout" render={() => (<CheckoutPage cart={cart} removeItemFromCart={removeItemFromCart}  />)}/>
         <Route exact={true} path="/customise"   render={() => (<CustomSockPage addItemToCart={addItemToCart}   />)}/>
-
+        <Route exact={true} path="/family"   render={() => (<FamilyPackPage addItemToCart={addItemToCart}   />)}/>
+        <Route exact={true} path="/work"   render={() => (<WorkPackPage addItemToCart={addItemToCart}   />)}/>
         <Route exact={true} path="/about-us" component={AboutUsPage}/>
         <Route exact={true} path="/customer-care" component={CustomerCarePage}/>
 
